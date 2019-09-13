@@ -80,7 +80,7 @@ else
   sudo mkdir -p /opt/secrets
   sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /opt/secrets/ssl_key -out /opt/secrets/ssl_crt "/C=BR /ST=SP /L=SP /O=Personal /OU=Personal /CN=Helix"
 
-  git clone https://github.com/fabiocabrini/helix-sandbox.git
+  git clone https://github.com/Helix-Platform/Sandbox.git
   cd helix-sandbox/compose
   echo "put_here_your_encryption_key" > secrets/aes_key.txt
   sudo docker-compose up -d
